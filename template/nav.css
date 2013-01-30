@@ -1,0 +1,189 @@
+/* copyleft indaam.com */
+.nav{
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	background:rgba(0, 0, 0, 0.6);
+	height:30px;
+	z-index:99;
+	border-bottom:1px solid rgba(255, 255, 255, 0.6);
+	box-shadow:0 1px 0 rgba(0, 0, 0, 0.6);
+	-moz-box-shadow:0 1px 0 rgba(0, 0, 0, 0.6);
+	-webkit-box-shadow:0 1px 0 rgba(0, 0, 0, 0.6);
+	-ms-box-shadow:0 1px 0 rgba(0, 0, 0, 0.6)
+	}
+
+.nav ul{
+	list-style:none
+	}
+
+.nav ul a{
+	text-decoration:none
+	}
+
+.nav ul.pg{
+	margin:0 0 0 5%;
+	float:left;
+	width:20%;
+	border-right:1px solid rgba(255, 255, 255, 0.6)
+	}
+
+.nav ul.pg li{
+	float:left;
+	width:50%
+	}
+
+.nav ul.pg li::before{
+	content:'';
+	position:relative;
+	top:14px;
+	left:1px;
+	float:left;
+	width:0;
+	height:0;
+	border:8px solid transparent;
+	border-left-color:rgba(255, 255, 255, 0.6);
+	border-bottom-color:rgba(255, 255, 255, 0.6)
+	}
+
+.nav ul.pg li:hover::before{
+	border-left-color:rgba(0, 0, 0, 0.6);
+	border-bottom-color:rgba(0, 0, 0, 0.6);
+	left:0
+	}
+
+.nav ul.pg li a{
+	text-indent:-6px;
+	font:normal 16px arial, helvetica, sans-serif;
+	color:#fff;
+	text-transform:capitalize;
+	display:block;
+	text-align:center;
+	padding:5px 0 6px 0;
+	border-left:1px solid rgba(255, 255, 255, 0.6);
+	text-shadow:0 1px 0 #2F296F
+	}
+
+.nav ul.pg li a:hover{
+	background:rgba(255, 255, 255, 0.6);
+	color:#555;
+	text-shadow:none
+	}
+
+.nav ul.this{
+	float:right;
+	margin:0 5% 0 0;
+	width:36%
+	}
+
+.nav ul.this li{
+	float:left;
+	width:25%
+	}
+
+.nav ul.this li a,
+.nav ul.this li a:link{
+	font:bold 14px arial, helvetica, sans-serif;
+	display:block;
+	text-align:center;
+	padding:7px 0;
+	text-transform:capitalize;
+	color:#fff;
+	text-shadow:none!important;
+	-moz-text-shadow:none!important;
+	-webkit-text-shadow:none!important;
+	-ms-text-shadow:none!important;
+	text-shadow:!important;
+	-moz-text-shadow:!important;
+	-webkit-text-shadow:!important;
+	-ms-text-shadow:!important
+	}
+
+.nav ul.this li a::after{
+	content:'';
+	position:relative;
+	top:11px;
+	left:50%;
+	float:left;
+	width:0;
+	height:0;
+	border:6px solid transparent;
+	border-bottom-color:rgba(255, 255, 255, 0.6)
+	}
+
+.nav ul.this li + li a::after{
+	border-bottom-color:transparent
+	}
+
+.nav ul.this li + li:hover a::after{
+	border-bottom-color:rgba(255, 255, 255, 0.6)
+	}
+
+.nav ul.this li.share a::after{
+	display:none
+	}
+
+.nav ul.this li.share::before{
+	content:'';
+	position:relative;
+	top:14px;
+	right:4px;
+	float:right;
+	width:0;
+	height:0;
+	border:6px solid transparent;
+	border-top-color:rgba(255, 255, 255, 0.6)
+	}
+
+.nav ul.this li.share ul{
+	display:none;
+	background:rgba(0, 0, 0, 0.6);
+	padding:0;
+	width:160%;
+	margin-left:-40%;
+	margin-top:2px;
+	border:1px solid #000;
+	border-top-width:0;
+	border-radius:0 0 3px 3px;
+	-moz-border-radius:0 0 3px 3px;
+	-webkit-border-radius:0 0 3px 3px;
+	-ms-border-radius:0 0 3px 3px
+	}
+
+.nav ul.this li.share:hover ul{
+	display:block
+	}
+
+.nav ul.this li.share ul li{
+	float:none;
+	width:auto
+	}
+
+.nav ul.this li.share ul li a{
+	font-size:12px;
+	text-align:left;
+	display:block;
+	padding:6px 0 6px 8px
+	}
+
+.nav ul.this li.share ul li a::before{
+	content:'';
+	position:relative;
+	top:3px;
+	right:4px;
+	float:right;
+	width:0;
+	height:0;
+	border:4px solid transparent;
+	border-left-color:#fff
+	}
+
+.nav ul.this li.share ul li a:hover{
+	color:#2FCF26
+	}
+
+.nav ul.this li.share ul li a:hover::before{
+	border-left-color:#2FCF26
+	}
+
